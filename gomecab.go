@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"unicode/utf8"
 
-	"gomecab/dict"
-	"gomecab/lattice"
+	"github.com/hbar137/GoMeCab/dict"
+	"github.com/hbar137/GoMeCab/lattice"
 )
 
 // Tokenizer performs Japanese morphological analysis using MeCab-compatible dictionaries.

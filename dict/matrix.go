@@ -51,7 +51,6 @@ func LoadMatrix(dir string) (*Matrix, error) {
 // ConnCost returns the connection cost between two adjacent morphemes.
 // prevRightID: right context ID of the preceding morpheme.
 // currLeftID: left context ID of the current morpheme.
-// Matches MeCab's: matrix_[prevRightID + lsize * currLeftID]
 func (m *Matrix) ConnCost(prevRightID, currLeftID uint16) int32 {
 	idx := int(prevRightID) + int(m.lsize)*int(currLeftID)
 	if idx < 0 || idx >= len(m.data) {

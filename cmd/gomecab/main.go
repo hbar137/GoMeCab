@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gomecab"
+	gomecab "github.com/hbar137/GoMeCab"
 )
 
 func main() {
